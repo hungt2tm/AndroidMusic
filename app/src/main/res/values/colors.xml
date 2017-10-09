@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2979FF</color>
+    <color name="colorPrimaryDark">#2962FF</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorLine">#FFDDDDDD</color>
+    <color name="colorDefaultText">#808080</color>
+    <color name="colorItemSelected">#E1F5FE</color>
+    <color name="backgroundPlayMusic">#ffffff</color>
+    <color name="backgroundNotification">#ff424242</color>
+</resources>

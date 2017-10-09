@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_playlist_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/home_padding">
+
+    <ImageView
+        android:id="@+id/item_playlist_album"
+        android:layout_width="@dimen/art_work"
+        android:layout_height="@dimen/art_work"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="@dimen/home_padding"
+        android:src="@drawable/music_placeholder"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:layout_marginRight="88dp"
+        android:layout_toRightOf="@id/item_playlist_album"
+        android:id="@+id/item_playlist_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:text="Playlist"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_marginRight="88dp"
+        android:layout_toRightOf="@id/item_playlist_album"
+        android:layout_below="@id/item_playlist_title"
+        android:id="@+id/item_playlist_artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Arstist"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/item_playlist_image_like"
+        android:layout_toRightOf="@id/item_playlist_album"
+        android:layout_below="@id/item_playlist_artist"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="1dp"
+        android:padding="4dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_count_like_off" />
+
+    <TextView
+        android:layout_below="@id/item_playlist_artist"
+        android:layout_toRightOf="@id/item_playlist_image_like"
+        android:id="@+id/item_playlist_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:text="128"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_playlist_track_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@drawable/more_next"
+        android:text="3333 tracks"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/item_playlist_image_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_playlist_artist"
+        android:src="@drawable/more_dot" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainPlayMusic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:padding="@dimen/home_padding"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlSeekBarLayout">
+
+        <FrameLayout
+            android:id="@+id/flAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgAlbum"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/avatar_holder" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/circle_photo" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/flAlbum">
+
+            <ImageView
+                android:id="@+id/imgRanDom"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_shuffle_off" />
+
+            <RelativeLayout
+                android:id="@+id/rlLayoutPlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imgPrevious"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_previous_black" />
+
+                <ImageView
+                    android:id="@+id/imgPlayPause"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgPrevious"
+                    android:scaleType="centerInside"
+                    android:background="@drawable/ic_play_circle_black" />
+
+                <ImageView
+                    android:id="@+id/imgNext"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imgPlayPause"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_next_black" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgLoop"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_repeat_off" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSeekBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/txtCurrentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="00:00"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMaxTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="04:09"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressDrawable="@drawable/seekbar_scrubber_progress_horizontal_holo_light"
+            android:thumb="@drawable/seekbar_scrubber_control_selector_holo_light" />
+    </RelativeLayout>
+
+</RelativeLayout>

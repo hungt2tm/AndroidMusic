@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlBanner"
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:background="@drawable/t300x300">
+
+            <ImageView
+                android:alpha="0.8"
+                android:id="@+id/playlist_detail_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/playlist_play" />
+
+            <TextView
+                android:id="@+id/playlist_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/home_padding"
+                android:layout_marginLeft="@dimen/home_padding"
+                android:alpha="0.8"
+                android:background="#000000"
+                android:text="Hunch Music (RHM 016)"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/playlist_detail_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/playlist_detail_title"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/home_padding"
+                android:alpha="0.8"
+                android:background="#000000"
+                android:text="Hunee"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:padding="@dimen/home_padding">
+            <TextView
+                android:id="@+id/playlist_detail_track_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 tracks, 47:57"
+                android:layout_weight="1"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/playlist_detail_image_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_count_like_off"/>
+            <TextView
+                android:id="@+id/playlist_detail_like"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="478"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:id="@+id/playlist_detail_more"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/more_dot_black"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorLine"/>
+
+        <include layout="@layout/frame_recycler" />
+
+    </LinearLayout>
+
+</ScrollView>

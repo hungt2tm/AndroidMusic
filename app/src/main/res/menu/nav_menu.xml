@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mymusic"
+            android:icon="@drawable/ic_mymusic"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_new_hot"
+            android:icon="@drawable/ic_hot"
+            android:title="New &amp; Hot" />
+        <item
+            android:id="@+id/nav_top50"
+            android:icon="@drawable/ic_top"
+            android:title="Top Play" />
+        <!--<item-->
+            <!--android:id="@+id/nav_recent"-->
+            <!--android:icon="@drawable/bookmark_music"-->
+            <!--android:title="Recent" />-->
+    </group>
+
+    <item android:title="TOOLS">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_setting"-->
+                <!--android:icon="@drawable/ic_settings_black_24dp"-->
+                <!--android:title="Setting" />-->
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>
